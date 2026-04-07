@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>samioffclx</title>
+
+<meta name="description" content="samioffcllx resmi web sitesi">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Orbitron',sans-serif;
+  background:#0a0a0a;
+  color:#fff;
+}
+
+/* HERO */
+#hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+}
+
+#hero h1{
+  font-size:3rem;
+  color:#9b59b6;
+  animation:glow 2s infinite alternate;
+}
+
+#hero h2{
+  margin-top:10px;
+}
+
+@keyframes glow{
+  from{ text-shadow:0 0 5px #9b59b6; }
+  to{ text-shadow:0 0 20px #9b59b6; }
+}
+
+/* CONTACT */
+#contact{
+  padding:60px;
+  text-align:center;
+  background:#111;
+}
+
+.contact-icons{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+}
+
+.contact-icons a{
+  font-size:20px;
+  color:#9b59b6;
+  text-decoration:none;
+}
+
+/* PRANK */
+#prank{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:black;
+  color:red;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  font-size:28px;
+  z-index:9999;
+  text-align:center;
+  padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<section id="hero">
+  <h1>samioffcllx</h1>
+  <h2>Digital Creator</h2>
+</section>
+
+<section id="contact">
+  <h2>İletişim</h2>
+  <div class="contact-icons">
+    <a href="https://wa.me/905335959238" target="_blank">WhatsApp</a>
+    <a href="https://instagram.com/samioffcllx" target="_blank">Instagram</a>
+  </div>
+</section>
+
+<!-- PRANK -->
+<div id="prank">
+⚠️ SİSTEME VİRÜS GİRDİ! ⚠️<br><br>
+Verileriniz siliniyor...
+</div>
+
+<script>
+setTimeout(function() {
+  var prank = document.getElementById("prank");
+  prank.style.display = "flex";
+
+  setTimeout(function() {
+    prank.innerHTML = "😂 ŞAKA YAPTIM KORKMA 😂<br><br>samioffcllx";
+    prank.style.color = "lime";
+  }, 3000);
+
+}, 60000);
+</script>
+
+</body>
+</html>
