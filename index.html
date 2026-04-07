@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>samioffclx | Web Tasarım</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Orbitron',sans-serif;
+  background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+  color:white;
+  text-align:center;
+}
+
+/* LOGO */
+.logo{
+  margin-top:40px;
+  animation:fadeIn 1.5s ease;
+}
+
+.logo svg{
+  width:80px;
+  filter:drop-shadow(0 0 10px #FFD700);
+}
+
+.logo-text{
+  font-size:28px;
+  color:#FFD700;
+  text-shadow:0 0 15px #FFD700;
+  margin-top:10px;
+}
+
+/* ANİMASYON */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(-20px);}
+  to{opacity:1;}
+}
+
+/* KART */
+.card{
+  background:rgba(0,0,0,0.6);
+  margin:20px;
+  padding:20px;
+  border-radius:15px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 20px rgba(255,215,0,0.3);
+}
+
+/* BUTON */
+.btn{
+  display:block;
+  margin:15px auto;
+  padding:15px;
+  width:90%;
+  max-width:300px;
+  border-radius:12px;
+  text-decoration:none;
+  color:white;
+  font-size:16px;
+}
+
+.whatsapp{background:#25D366;}
+.instagram{background:#E1306C;}
+.phone{background:#3498db;}
+</style>
+</head>
+
+<body>
+
+<!-- LOGO -->
+<div class="logo">
+
+  <!-- SVG LOGO -->
+  <svg viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="40" stroke="#FFD700" stroke-width="4" fill="none"/>
+    <polygon points="50,20 60,50 50,80 40,50" fill="#FFD700"/>
+  </svg>
+
+  <div class="logo-text">samioffclx</div>
+</div>
+
+<div class="card">
+  <h3>💻 Web Site Tasarımı</h3>
+  <p>Dükkan, mağaza ve işletmeler için profesyonel site yapıyorum.</p>
+</div>
+
+<div class="card">
+  <h3>⚡ Mobil Uyumlu</h3>
+  <p>Tüm cihazlarda sorunsuz çalışan modern tasarım.</p>
+</div>
+
+<div class="card">
+  <h3>💰 Fiyatlar</h3>
+  <p>Fiyat bilgisi için iletişime geçiniz.</p>
+</div>
+
+<a class="btn whatsapp" href="https://wa.me/905335959238">
+💬 WhatsApp
+</a>
+
+<a class="btn instagram" href="https://instagram.com/samioffcllx">
+📸 Instagram
+</a>
+
+<a class="btn phone" href="tel:05335959238">
+📞 Ara
+</a>
+
+</body>
+</html>
